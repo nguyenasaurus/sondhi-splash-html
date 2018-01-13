@@ -1,0 +1,80 @@
+/* Medium Devices, Desktops */
+    @media only screen and (max-width : 1000px) {
+        // layout
+        .wrapper {
+            flex-wrap: wrap;
+        }
+
+        main {
+            padding-right: 0;
+            margin-bottom: 1rem;
+        }
+
+        aside {
+            padding: 5rem;
+            background: darken($darkBlue, 2%);
+            width: 90%;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 100%;
+            h2 {
+                width: 100%;
+                text-align: center;
+            }
+            div.mainInput {
+                display:flex;
+                justify-content: space-around;
+            }
+            div.input {
+                padding: 1rem;
+            }
+            div.mainInfo{
+                display:flex;
+                flex-direction: column;
+            }
+            textarea, i.fa-pencil {
+                height: 12.5rem;
+            }
+            button.formSubmit {
+                width: 50%;
+                align-self: center;
+            }
+            div.responseInput {
+                width: 40%;
+                align-self: center;
+                justify-content: space-around;
+                display: flex;
+            }
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 700px) {
+        
+        form {
+            h2 {
+                font-size: 2rem;
+            }
+            div.mainInput {
+                flex-direction: column;
+            }
+            div.input {
+                margin-bottom: -1rem;
+            }
+        }
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        aside {
+            padding: 4rem 3rem;
+            button.formSubmit {
+                width: 80%;
+            }
+        }
+    }

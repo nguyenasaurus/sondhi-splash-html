@@ -2,13 +2,117 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>React Boilerplate</title>
+	<title>Sondhi Defence | Criminal Defence in the GTA</title>
+	<link rel="stylesheet" href="/public/foundation/css/foundation.css">
+	<link rel="stylesheet" href="/public/foundation/css/app.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Montserrat:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div id="app">
+	<div class="row">
+		<div class="wrapper">
+			<main>
+				<h1>Sondhi Defence</h1>
+				<div class="cta">
+					<p>A guardian of your rights. We provide quality and fair representation to those who need it. We are here to help you navigate through the criminal justice system.</p>
+				</div>
+			
+				<ul class="services">
+					<li>
+						<div class="img">
+							<img src="/public/styles/assets/icons/home-efficient.svg" alt="">
+						</div>
+						<p class="title">
+							Efficient</p>
+						<p>We stay organized so that we don't waste any of our client's time.</p>
+					</li>
+					
+					<li>
+						<div class="img">
+							<img src="/public/styles/assets/icons/home-effective.svg" alt="">
+						</div>
+						<p class="title">Effective</p>
+						<p>Commited to keeping you out of custody and achieving the best result possible.</p>
+					</li>
+
+					<li>
+						<div class="img">
+							<img src="/public/styles/assets/icons/home-respectful.svg" alt="">
+						</div>
+						<p class="title">Respectful</p>
+						<p>We are kind, calm, patient, reliable and ready to treat you with the respect that you deserve.</p>
+					</li>
+				</ul>
+			</main>
+			<aside>
+				
+				<form method="POST" action="http://formspree.io/info@sondhidefence.ca">
+					<h2>Get in Touch!</h2>
+						<div class="mainInput">
+							<div class="input">
+								<i class="fa fa-pencil" aria-hidden="true"></i>
+								<textarea name="message" placeholder="Your message"></textarea>
+							</div>
+							<div class="mainInfo">
+								<div class="input">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									<input type="text" name="fullName" placeholder="Full name">
+								</div>
+								<div class="input">
+									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+									<input type="email" name="email" placeholder="Email">
+								</div>
+								<div class="input">
+									<i class="fa fa-phone" aria-hidden="true"></i>
+									<input type="number" name="phone" placeholder="Phone Number">
+								</div>
+							</div>
+						</div>
+						<div class="mainInfo">
+							<p>I'd like a response via...</p>
+							<div class="responseInput">
+								<input type="radio" name="contactType" id="contactXemail" value="email">
+								<label for="contactXemail">Email</label>
+								<input type="radio" name="contactType" id="contactxPhone" value="phone">
+								<label for="contactxPhone">Phone</label>
+							</div>
+							<br />
+							<button class="formSubmit" type="submit">Submit</button>
+						</div>
+				</form>
+			</aside>
+		</div>
 	</div>
+	<div id="blackScreen" class="blackScreen">
+		<div class="exit">
+			<i class="fa fa-times fa-2x" aria-hidden="true"></i>
+		</div>
+		<div class="messageBox">
+			<p>Your message has made it through!</p>
+			<p>Expect to hear back soon.</p>
+		</div>
+	</div>
+	<footer class="row">
+		<div class="wrapper">
+			<div class="associations">
+				<p>Accredited Associations</p>
+				<div class="img">
+					<img src="/public/styles/assets/icons/law-society-upper-canada.png" alt="">
+				</div>
+			</div>
+			<div class="social">
+
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
 	<script src="/public/scripts/app.js"></script>
+	<script src="/public/foundation/js/vendor/jquery.js"></script>
+	<script src="/public/foundation/js/vendor/what-input.js"></script>
+	<script src="/public/foundation/js/vendor/foundation.js"></script>
+	<script src="/public/foundation/js/app.js"></script>
+	<script src="https://use.fontawesome.com/a024ed12a1.js"></script>
 </body>
 </html>

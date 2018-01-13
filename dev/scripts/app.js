@@ -1,14 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+console.log('hiv')
 
-class App extends React.Component {
-    render() {
-      return (
-        <div>
-          Hello
-        </div>
-      )
-    }
-}
-
-ReactDOM.render(<App />, document.getElementById('app'));
+$("form").submit((e) => {
+    console.log('form Submitted')
+    $('div#blackScreen').css('display','flex')
+    $('div.exit').click(() => {
+        $('div#blackScreen').css('display','none');
+    })
+    e.preventDefault();
+})
