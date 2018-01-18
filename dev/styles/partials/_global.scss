@@ -1,6 +1,6 @@
 // BG
 body {
-    background-image: url(/public/styles/assets/SD-BETA-BG.svg);
+    background-image: url(../styles/assets/SD-BETA-BG.svg);
     background-repeat: no-repeat;
     background-size: cover;
     color: $white;
@@ -146,11 +146,11 @@ form {
         height: 9rem;
     }
 
-    i.fa-user, i.fa-envelope-o, i.fa-phone {
+    i.fa-user, i.fa-envelope-o, i.fa-phone, i.fa-gavel, i.fa-calendar {
         height: 2.5rem;
     }
 
-    input[type="text"],input[type="email"],input[type="number"] {
+    input[type="text"],input[type="email"],input[type="number"],input[type="date"] {
         margin-bottom: 0rem;
         font-family: $bodyFont;
         padding: 1rem;
@@ -176,7 +176,7 @@ form {
         font-size: 1rem;
     }
 
-    button {
+    button.formSubmit {
         font-family: $bodyFont;
         font-size: 1.6rem;
         background-color: $blue;
@@ -184,14 +184,12 @@ form {
         border: 1px solid $blue;
         padding: 0.8rem 1.8rem;
         margin-top: 1rem;
+        @include roundCorners(0.8rem);
         transition: all 0.3s ease-in-out;
         &:hover {
         background-color: transparent;
         border: 1px solid $white;
         }
-    }
-    button.formSubmit {
-        @include roundCorners(0.8rem);
     }
 }
 
@@ -251,6 +249,7 @@ div.blackScreen {
 footer {
     background: $black;
     .associations {
+        margin: 1rem auto;
         display:flex;
         align-items: center;
         justify-content: center;
@@ -258,6 +257,9 @@ footer {
             padding: 0;
             margin: 0 1rem 0 0;
         }
+    }
+    div.img {
+        width: 30%;
     }
 }
 

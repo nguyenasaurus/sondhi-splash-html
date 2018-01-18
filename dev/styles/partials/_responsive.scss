@@ -55,6 +55,21 @@
     /* Small Devices, Tablets */
     @media only screen and (max-width : 700px) {
         
+        ul.services {
+            display: block;
+            li {
+                width: 100%;
+                margin:1rem auto;
+                padding:0;
+            }
+        }
+        
+        .services .img {
+            width:25%;
+            margin: 0 auto;
+            padding:0;
+        }
+
         form {
             h2 {
                 font-size: 2rem;
@@ -63,7 +78,7 @@
                 flex-direction: column;
             }
             div.input {
-                margin-bottom: -1rem;
+                margin-bottom: -0.5rem;
             }
         }
 
@@ -76,5 +91,11 @@
             button.formSubmit {
                 width: 80%;
             }
+        }
+    }
+
+    @media only screen and (max-width : 396px) {
+        h1 {
+            font-size: 4rem;
         }
     }

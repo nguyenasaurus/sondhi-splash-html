@@ -15,7 +15,7 @@
 			<main>
 				<h1>Sondhi Defence</h1>
 				<div class="cta">
-					<p>A guardian of your rights. We provide quality and fair representation to those who need it. We are here to help you navigate through the criminal justice system.</p>
+					<p>A guardian of your rights. Sondhi Defence provides effective and fair representation to those in need.</p>
 				</div>
 			
 				<ul class="services">
@@ -24,8 +24,8 @@
 							<img src="/public/styles/assets/icons/home-efficient.svg" alt="">
 						</div>
 						<p class="title">
-							Efficient</p>
-						<p>We stay organized so that we don't waste any of our client's time.</p>
+							Dedicated</p>
+						<p>We stand by our clients to ensure they are given a fair opportunity for justice every step of the way.</p>
 					</li>
 					
 					<li>
@@ -33,7 +33,7 @@
 							<img src="/public/styles/assets/icons/home-effective.svg" alt="">
 						</div>
 						<p class="title">Effective</p>
-						<p>Commited to keeping you out of custody and achieving the best result possible.</p>
+						<p>Committed to advising and prioritizing our clients' needs with their best interests in mind.</p>
 					</li>
 
 					<li>
@@ -41,31 +41,39 @@
 							<img src="/public/styles/assets/icons/home-respectful.svg" alt="">
 						</div>
 						<p class="title">Respectful</p>
-						<p>We are kind, calm, patient, reliable and ready to treat you with the respect that you deserve.</p>
+						<p>A kind, patient and honest team who treat clients with the respect they deserve.</p>
 					</li>
 				</ul>
 			</main>
 			<aside>
 				
-				<form method="POST" action="http://formspree.io/info@sondhidefence.ca">
+				<form id="contactForm">
 					<h2>Get in Touch!</h2>
 						<div class="mainInput">
 							<div class="input">
 								<i class="fa fa-pencil" aria-hidden="true"></i>
-								<textarea name="message" placeholder="Your message"></textarea>
+								<textarea id="message" name="message" placeholder="Your message"></textarea>
 							</div>
 							<div class="mainInfo">
 								<div class="input">
 									<i class="fa fa-user" aria-hidden="true"></i>
-									<input type="text" name="fullName" placeholder="Full name">
+									<input id="name" type="text" name="fullName" id="name" placeholder="Full Name">
+								</div>
+								<div class="input">
+									<i class="fa fa-gavel" aria-hidden="true"></i>
+									<input id="charges" type="text" name="charges" placeholder="Charge(s)">
+								</div>
+								<div class="input">
+									<i class="fa fa-calendar" aria-hidden="true"></i>
+									<input id="courtDate" type="text" name="courtDate" placeholder="Court Date">
 								</div>
 								<div class="input">
 									<i class="fa fa-envelope-o" aria-hidden="true"></i>
-									<input type="email" name="email" placeholder="Email">
+									<input id="email" type="email" name="email" placeholder="Email">
 								</div>
 								<div class="input">
 									<i class="fa fa-phone" aria-hidden="true"></i>
-									<input type="number" name="phone" placeholder="Phone Number">
+									<input id="number" type="number" name="phone" placeholder="Phone Number">
 								</div>
 							</div>
 						</div>
@@ -78,8 +86,8 @@
 								<label for="contactxPhone">Phone</label>
 							</div>
 							<br />
-							<button class="formSubmit" type="submit">Submit</button>
 						</div>
+						<button type="submit" value="submit" class="formSubmit">Submit</button>
 				</form>
 			</aside>
 		</div>
@@ -89,8 +97,8 @@
 			<i class="fa fa-times fa-2x" aria-hidden="true"></i>
 		</div>
 		<div class="messageBox">
-			<p>Your message has made it through!</p>
-			<p>Expect to hear back soon.</p>
+			<p>We've received your information.</p>
+			<p>Someone from the Sondhi Defence team will be in touch with you within the next 24 hours.</p>
 		</div>
 	</div>
 	<footer class="row">
@@ -98,7 +106,7 @@
 			<div class="associations">
 				<p>Accredited Associations</p>
 				<div class="img">
-					<img src="/public/styles/assets/icons/law-society-upper-canada.png" alt="">
+					<img src="/public/styles/assets/icons/LawSocietyofOntario.svg" alt="">
 				</div>
 			</div>
 			<div class="social">
@@ -108,11 +116,12 @@
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	 crossorigin="anonymous"></script>
-	<script src="/public/scripts/app.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/public/foundation/js/vendor/jquery.js"></script>
 	<script src="/public/foundation/js/vendor/what-input.js"></script>
 	<script src="/public/foundation/js/vendor/foundation.js"></script>
 	<script src="/public/foundation/js/app.js"></script>
 	<script src="https://use.fontawesome.com/a024ed12a1.js"></script>
+	<script src="/public/scripts/app.js"></script>
 </body>
 </html>
